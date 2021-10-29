@@ -8,23 +8,15 @@
     android:background="@android:color/transparent"
     tools:context=".BlankFragment">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/appCompatButton"
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/boton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/botonoscuro"
-        android:paddingLeft="50dp"
-        android:paddingRight="50dp"
+        android:layout_margin="16dp"
         android:text="@string/menu"
-        android:textColor="@color/white"
+        app:icon="@drawable/menu_icon"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:tint="@android:color/white"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:text=""
-        app:layout_constraintStart_toEndOf="@+id/appCompatButton"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

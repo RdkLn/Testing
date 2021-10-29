@@ -4,14 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/DAM/Android/Testing/app/src/main/res/drawable/botonOscuro.xml" value="0.2890625" />
+        <entry key="..\:/DAM/Android/Testing/app/src/main/res/drawable/botonclaro.xml" value="0.2890625" />
         <entry key="..\:/DAM/Android/Testing/app/src/main/res/drawable/botones.xml" value="0.2890625" />
         <entry key="..\:/DAM/Android/Testing/app/src/main/res/drawable/botonoscuro.xml" value="0.2890625" />
+        <entry key="..\:/DAM/Android/Testing/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2890625" />
+        <entry key="..\:/DAM/Android/Testing/app/src/main/res/drawable/menu_icon.xml" value="0.24114583333333334" />
         <entry key="..\:/DAM/Android/Testing/app/src/main/res/drawable/titulo.xml" value="0.2890625" />
         <entry key="..\:/DAM/Android/Testing/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/DAM/Android/Testing/app/src/main/res/layout/activity_main2.xml" value="0.21354166666666666" />
         <entry key="..\:/DAM/Android/Testing/app/src/main/res/layout/activity_main_motion_ends.xml" value="0.25" />
         <entry key="..\:/DAM/Android/Testing/app/src/main/res/layout/activity_main_motion_starts.xml" value="0.25" />
-        <entry key="..\:/DAM/Android/Testing/app/src/main/res/layout/fragment_blank.xml" value="0.24320652173913043" />
+        <entry key="..\:/DAM/Android/Testing/app/src/main/res/layout/fragment_blank.xml" value="0.1" />
         <entry key="..\:/DAM/Android/Testing/app/src/main/res/layout/second_activity.xml" value="0.24320652173913043" />
       </map>
     </option>
