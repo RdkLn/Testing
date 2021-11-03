@@ -1,5 +1,7 @@
 package com.example.testing
 
+import android.content.res.ColorStateList
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -49,6 +51,7 @@ class BlankFragment : Fragment() {
         boton3=view.findViewById(R.id.boton3)
         boton1.setOnClickListener{
             boton1.extend()
+            boton1.backgroundTintList=ColorStateList.valueOf(Color.parseColor("#393E46"))
             boton2.shrink()
             boton3.shrink()
         }
