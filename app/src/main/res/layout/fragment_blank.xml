@@ -8,15 +8,49 @@
     android:background="@android:color/transparent"
     tools:context=".BlankFragment">
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-        android:id="@+id/boton1"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:text="@string/menu"
-        app:icon="@drawable/menu_icon"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:tint="@android:color/white"/>
+        android:gravity="center_horizontal">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/boton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/menu"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:backgroundTint="@color/black"
+            app:icon="@drawable/menu_icon"
+            app:iconTint="@android:color/white" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/boton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/home"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:backgroundTint="@color/black"
+            app:icon="@drawable/ic_baseline_home_24"
+            app:iconTint="@color/white" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/boton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/settings"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:backgroundTint="@color/black"
+            app:icon="@drawable/ic_baseline_settings_24"
+            app:iconTint="@color/white" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

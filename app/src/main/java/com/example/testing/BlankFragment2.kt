@@ -1,11 +1,10 @@
 package com.example.testing
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -14,14 +13,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [BlankFragment.newInstance] factory method to
+ * Use the [BlankFragment2.newInstance] factory method to
  * create an instance of this fragment.
  */
-class BlankFragment : Fragment() {
-    lateinit var boton1: ExtendedFloatingActionButton
-    lateinit var boton2: ExtendedFloatingActionButton
-    lateinit var boton3: ExtendedFloatingActionButton
-
+class BlankFragment2 : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -38,30 +33,8 @@ class BlankFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var view2= inflater.inflate(R.layout.fragment_blank, container, false)
-        comprobarFragment(view2)
-        return view2
-    }
-
-    fun comprobarFragment(view: View){
-        boton1= view.findViewById(R.id.boton1)
-        boton2=view.findViewById(R.id.boton2)
-        boton3=view.findViewById(R.id.boton3)
-        boton1.setOnClickListener{
-            boton1.extend()
-            boton2.shrink()
-            boton3.shrink()
-        }
-        boton2.setOnClickListener{
-            boton2.extend()
-            boton1.shrink()
-            boton3.shrink()
-        }
-        boton3.setOnClickListener{
-            boton3.extend()
-            boton1.shrink()
-            boton2.shrink()
-        }
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_blank2, container, false)
     }
 
     companion object {
@@ -71,12 +44,12 @@ class BlankFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment BlankFragment.
+         * @return A new instance of fragment BlankFragment2.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            BlankFragment().apply {
+            BlankFragment2().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

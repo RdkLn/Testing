@@ -15,4 +15,14 @@
         android:name="com.example.testing.SecondActivity"
         android:label="second_activity"
         tools:layout="@layout/second_activity" />
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.testing.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" />
+    <fragment
+        android:id="@+id/blankFragment2"
+        android:name="com.example.testing.BlankFragment2"
+        android:label="fragment_blank2"
+        tools:layout="@layout/fragment_blank2" />
 </navigation>
