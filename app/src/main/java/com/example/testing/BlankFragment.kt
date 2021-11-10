@@ -7,7 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentContainerView
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -23,6 +25,7 @@ class BlankFragment : Fragment() {
     lateinit var boton1: ExtendedFloatingActionButton
     lateinit var boton2: ExtendedFloatingActionButton
     lateinit var boton3: ExtendedFloatingActionButton
+    lateinit var container: FragmentContainerView
 
     // TODO: Rename and change types of parameters
     private var param1: String? = null
@@ -49,22 +52,35 @@ class BlankFragment : Fragment() {
         boton1= view.findViewById(R.id.boton1)
         boton2=view.findViewById(R.id.boton2)
         boton3=view.findViewById(R.id.boton3)
+        container=view.findViewById(R.id.fragmentContainerView2)
         boton1.setOnClickListener{
             boton1.extend()
             boton1.backgroundTintList=ColorStateList.valueOf(Color.parseColor("#393E46"))
             boton2.shrink()
+            boton2.backgroundTintList=ColorStateList.valueOf(Color.parseColor("#000000"))
             boton3.shrink()
+            boton3.backgroundTintList=ColorStateList.valueOf(Color.parseColor("#000000"))
+            replaceFragment(fragment)
         }
         boton2.setOnClickListener{
             boton2.extend()
+            boton2.backgroundTintList=ColorStateList.valueOf(Color.parseColor("#393E46"))
             boton1.shrink()
+            boton1.backgroundTintList=ColorStateList.valueOf(Color.parseColor("#000000"))
             boton3.shrink()
+            boton3.backgroundTintList=ColorStateList.valueOf(Color.parseColor("#000000"))
         }
         boton3.setOnClickListener{
             boton3.extend()
+            boton3.backgroundTintList=ColorStateList.valueOf(Color.parseColor("#393E46"))
             boton1.shrink()
+            boton1.backgroundTintList=ColorStateList.valueOf(Color.parseColor("#000000"))
             boton2.shrink()
+            boton2.backgroundTintList=ColorStateList.valueOf(Color.parseColor("#000000"))
         }
+    }
+    fun replaceFragment(fragment: Fragment){
+
     }
 
     companion object {

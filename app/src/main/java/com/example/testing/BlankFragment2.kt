@@ -33,8 +33,8 @@ class BlankFragment2 : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_blank2, container, false)
+        var view2= inflater.inflate(R.layout.fragment_blank2, container, false)
+        return view2
     }
 
     companion object {
